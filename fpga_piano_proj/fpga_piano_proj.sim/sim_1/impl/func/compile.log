@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mb5018/Desktop/fpga-piano-master/fpga_piano_proj/fpga_piano_proj.sim/sim_1/impl/func/piano_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_dvd
+INFO: [VRFC 10-307] analyzing entity clk_dvd_0
+INFO: [VRFC 10-307] analyzing entity clk_dvd_1
+INFO: [VRFC 10-307] analyzing entity note_gen
+INFO: [VRFC 10-307] analyzing entity seven_seg
+INFO: [VRFC 10-307] analyzing entity piano
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mb5018/Desktop/fpga-piano-master/piano_lab/src/piano_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity piano_tb
