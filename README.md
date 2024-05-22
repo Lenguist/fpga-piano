@@ -1,5 +1,10 @@
 This is a repo associated with our final project for Digital Systems Lab where we built an FPGA piano!    
 
+
+https://github.com/sisler101/fpga-piano/assets/67922461/9e3ea6d3-c597-4382-84e0-83a9a76dbf7d
+
+
+  
 ## Setup:  
 The notes A, B, C, D, E, F, G correspond to switches SW1-SW7. The push buttons pb0, pb1, pb2, and pb3 are used to adjust the notes to be sharps, flats, and change octave.  
 C → W13 → SW7  
@@ -112,7 +117,6 @@ Inside the if statement, we index into the array of notes and set note_next to t
 
 
 
-https://github.com/sisler101/fpga-piano/assets/67922461/8ce2655f-07da-439a-a173-9c090e2c3793
 
 
 
