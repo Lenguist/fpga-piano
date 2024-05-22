@@ -18,7 +18,7 @@ B → V16 → SW1
 Used this piano from [vibrationdata](https://www.vibrationdata.com/piano.htm) for key-frequency mapping:  
 <img width="200" alt="Screenshot 2024-05-21 at 8 34 53 PM" src="https://github.com/sisler101/fpga-piano/assets/67922461/0d532d09-8ff9-4dfc-92e2-1b3ff4e94878">
 
-### Fequency Math:
+### Frequency Math:
 With a 100MHz input CLK and DIV equal to 32 in hex = 50 in dec:  
 New clk = CLK/DIV * .5 = 100MHz/50 * .5 = 1MHz  
 
@@ -41,8 +41,8 @@ Checking actual frequency vs calculated frequency for some notes to confirm our 
 |B4|1012|494.07|493.88|
 
 ## Testing:
-We first wrote test bench code and produced waveforms to confirm the piano was functional.  
-### Code:
+We first edited the test bench to play some notes and produced waveforms to confirm the piano was functional.  
+### Test Bench:
 
 ```
 -- *** Test Bench - User Defined Section ***
@@ -98,13 +98,13 @@ pb_in(0) <= '1';
 ```
 ### Waveforms:
 <img width="1299" alt="Screenshot 2024-05-21 at 9 13 05 PM" src="https://github.com/sisler101/fpga-piano/assets/67922461/7cabbb63-a8a7-4cff-97af-355c5d277c2a">  
-As seen above, switched 7,6,5, and 4 switch on and then off, playing notes C, D, E, and then F.  
+As seen above, switches 7, 6, 5, and 4 turn on and then off, playing notes C, D, E, and then F.  
 
 ## Happy Birthday!  
-After uploading the coade to the FPGA and confirming the notes play as intended, we modified our code to play happy birthday.  
+After uploading to the FPGA and confirming the notes play as intended, we modified our design to play happy birthday.  
   
-### The code in piano.vhd functions as follows:  
-We first created an array of the sequence of notes we want to play for Happy Birthday. We then began our user interface code by assigning note_in to be note_next so that the next note is ready to be played. All notes play for the same duration of time which is 1s.  
+### piano.vhd functions as follows:  
+We first created an array of the sequence of notes we want to play for Happy Birthday. We then began our user interface section by assigning note_in to be note_next so that the next note is ready to be played. All notes play for the same duration of time which is 1s.  
   
 If the reset button is pressed, RST will be equal to one and then we set note_next to 0, count to 0, and note_index to 0. 
   
